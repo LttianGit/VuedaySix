@@ -7,19 +7,153 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fonts/iconfont.css">
 </head>
 
 <body>
     <div class="box">
         <header>
-            <span class="active">未使用</span>
-            <span>已使用</span>
-            <span>已过期</span>
+            <ul class="list">
+                <li class="active">未使用</li>
+                <li>已使用</li>
+                <li>已过期</li>
+            </ul>
         </header>
         <section>
-
+            <div>
+                <div class="top">
+                    <div class="top_list">
+                        <span>￥</span><b>5</b>
+                    </div>
+                    <span>满减券</span>
+                </div>
+                <div class="bot">
+                    <p><i class="iconfont icon-gongzuojilu"></i>使用门槛：1.满100元即可使用；2.本券适用于所有项目</p>
+                    <p><i class="iconfont icon-shizhong1"></i>使用时间：即日起至2016年11月10日</p>
+                </div>
+            </div>
+            <div>
+                <div class="top" style="background: cornflowerblue">
+                    <div class="top_list">
+                        <span>折</span><b>9.5</b>
+                    </div>
+                    <span>折扣券</span>
+                </div>
+                <div class="bot">
+                    <p><i class="iconfont icon-gongzuojilu"></i>使用门槛：1.满100元即可使用；2.本券适用于所有项目</p>
+                    <p><i class="iconfont icon-shizhong1"></i>使用时间：即日起至2016年11月10日</p>
+                </div>
+            </div>
+            <div>
+                <div class="top" style="background: slateblue">
+                    <div class="top_list">
+                        <span>￥</span><b>10</b>
+                    </div>
+                    <span>满减券</span>
+                </div>
+                <div class="bot">
+                    <p><i class="iconfont icon-gongzuojilu"></i>使用门槛：1.满100元即可使用；2.本券适用于所有项目</p>
+                    <p><i class="iconfont icon-shizhong1"></i>使用时间：即日起至2016年11月10日</p>
+                </div>
+            </div>
+            <div>
+                <div class="top" style="background: green">
+                    <div class="top_list">
+                        <span>￥</span><b>10</b>
+                    </div>
+                    <span>满减券</span>
+                </div>
+                <div class="bot">
+                    <p><i class="iconfont icon-gongzuojilu"></i>使用门槛：1.满100元即可使用；2.本券适用于所有项目</p>
+                    <p><i class="iconfont icon-shizhong1"></i>使用时间：即日起至2016年11月10日</p>
+                </div>
+            </div>
         </section>
+        <div class="tabOne">
+            <div>
+                <div class="top">
+                    <div class="top_list">
+                        <span>￥</span><b>5</b>
+                    </div>
+                    <span>已使用</span>
+                </div>
+                <div class="bot">
+                    <p><i class="iconfont icon-gongzuojilu"></i>使用门槛：1.满100元即可使用；2.本券适用于所有项目</p>
+                    <p><i class="iconfont icon-shizhong1"></i>使用时间：即日起至2016年11月10日</p>
+                </div>
+            </div>
+            <div>
+                <div class="top">
+                    <div class="top_list">
+                        <span>￥</span><b>5</b>
+                    </div>
+                    <span>已使用</span>
+                </div>
+                <div class="bot">
+                    <p><i class="iconfont icon-gongzuojilu"></i>使用门槛：1.满100元即可使用；2.本券适用于所有项目</p>
+                    <p><i class="iconfont icon-shizhong1"></i>使用时间：即日起至2016年11月10日</p>
+                </div>
+            </div>
+        </div>
+        <div class="tabTwo">
+            <div>
+                <div class="top" style="background: darkgrey">
+                    <div class="top_list">
+                        <span>￥</span><b>5</b>
+                    </div>
+                    <span>已过期</span>
+                </div>
+                <div class="bot">
+                    <p><i class="iconfont icon-gongzuojilu"></i>使用门槛：1.满100元即可使用；2.本券适用于所有项目</p>
+                    <p><i class="iconfont icon-shizhong1"></i>使用时间：即日起至2016年11月10日</p>
+                </div>
+            </div>
+            <div>
+                <div class="top" style="background: darkgrey">
+                    <div class="top_list">
+                        <span>￥</span><b>6</b>
+                    </div>
+                    <span>已过期</span>
+                </div>
+                <div class="bot">
+                    <p><i class="iconfont icon-gongzuojilu"></i>使用门槛：1.满100元即可使用；2.本券适用于所有项目</p>
+                    <p><i class="iconfont icon-shizhong1"></i>使用时间：即日起至2016年11月10日</p>
+                </div>
+            </div>
+            <div>
+                <div class="top" style="background: darkgrey">
+                    <div class="top_list">
+                        <span>￥</span><b>10</b>
+                    </div>
+                    <span>已过期</span>
+                </div>
+                <div class="bot">
+                    <p><i class="iconfont icon-gongzuojilu"></i>使用门槛：1.满100元即可使用；2.本券适用于所有项目</p>
+                    <p><i class="iconfont icon-shizhong1"></i>使用时间：即日起至2016年11月10日</p>
+                </div>
+            </div>
+        </div>
     </div>
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script>
+        $('.list').on('click', 'li', function() {
+            var inx = $(this).index();
+            $(this).addClass('active').siblings().removeClass('active');
+            if (inx == 1) {
+                $('section').hide();
+                $('.tabOne').show();
+                $('.tabTwo').hide();
+            } else if (inx == 2) {
+                $('section').hide();
+                $('.tabOne').hide();
+                $('.tabTwo').show();
+            } else {
+                $('section').show();
+                $('.tabOne').hide();
+                $('.tabTwo').hide();
+            }
+        })
+    </script>
 </body>
 
 </html>
